@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <windows.h>
+#include <math.h>
 
 // 碳水和蛋白质配额查找函数
 void get_ratios(char gender, double height_cm, double weight, double *carb_ratio, double *protein_ratio) {
@@ -221,6 +222,10 @@ void calculate() {
     printf("推荐摄入热量: %.2f 大卡/天\n", e);
     printf("==============================\n");
     // 调用函数获取碳水和蛋白质比例
+
+    // 将height_cm和weight估计为个位以0、5结尾的
+    height_cm = round(height_cm / 5.0) * 5.0;
+    weight = round(weight / 5.0) * 5.0;
     double carb_ratio, protein_ratio;
     get_ratios(gender, height_cm, weight, &carb_ratio, &protein_ratio);
 
