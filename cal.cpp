@@ -243,13 +243,22 @@ void calculate() {
         printf("早餐建议的碳水化合物摄入量为%.2f克，蛋白质摄入量为%.2f克。\n", carb_intake * 0.2, protein_intake * 0.2);
         
         printf("\n早餐碳水建议：\n");
-        printf("1. 吐司面包/馒头花卷: %.2f 克\n", carb_intake * 0.2);
-        printf("2. 速食燕麦片: %.2f 克\n", carb_intake * 0.2);
-        printf("3. 燕麦麸皮: %.2f 克\n", carb_intake * 0.2);
-        printf("4. 玉米/土豆: %.2f 克（是甜玉米 不是糯玉米）\n", carb_intake * 0.2);
-        printf("5. 红薯: %.2f 克\n", carb_intake * 0.2);
-        printf("6. 熟面条: %.2f 克（干面除以3）\n", carb_intake * 0.2);
-        printf("7. 熟米饭: %.2f 克（生米除以2.5）\n", carb_intake * 0.2);
+        printf("1. 吐司面包/馒头花卷: %.2f 克\n", carb_intake * 0.2/0.5);
+        printf("2. 速食燕麦片(干): %.2f 克\n", carb_intake * 0.2/0.6);
+        printf("3. 燕麦麸皮: %.2f 克\n", carb_intake * 0.2/0.45);
+        printf("4. 玉米/土豆: %.2f 克（是甜玉米 不是糯玉米）\n", carb_intake * 0.2/0.18);
+        printf("5. 红薯: %.2f 克\n", carb_intake * 0.2/0.2);
+        printf("6. 熟面条: %.2f 克（干面除以3）\n", carb_intake * 0.2/0.23);
+        printf("7. 熟米饭(偏软): %.2f 克（生米除以2.5）\n", carb_intake * 0.2/0.25);
+        printf("8. 米饭（一般）：%.2f克",carb_intake * 0.2/0.30);
+        printf("9. 米饭（硬）：%.2f克",carb_intake * 0.2/0.35);
+        printf("10. 挂面（生）: %.2f 克\n", carb_intake * 0.2 / 0.7);
+        printf("11. 意面（生）: %.2f 克\n", carb_intake * 0.2 / 0.7);
+        printf("12. 鲜面（生）: %.2f 克\n", carb_intake * 0.2 / 0.65);
+        printf("13. 米粥: %.2f 克\n", carb_intake * 0.2 / 0.125);
+        printf("14. 米线（湿）: %.2f 克\n", carb_intake * 0.2 / 0.33);
+        printf("15. 米粉（干）: %.2f 克\n", carb_intake * 0.2 / 0.75);
+        printf("16. 肠粉: %.2f 克\n", carb_intake * 0.2 / 0.20);
 
         printf("\n早餐蛋白建议：\n");
         printf("1. 鸡蛋+牛奶\n");
@@ -264,7 +273,7 @@ void calculate() {
         printf("5.全蛋3个+牛奶一盒=全蛋4个+蛋白1个=27g蛋白质\n");
         printf("**************************************\n");
 
-        printf("3. 熟瘦肉: %.2f 克（带油没事）\n", protein_intake * 0.2);
+        printf("3. 熟瘦肉: %.2f 克（带油没事）\n", protein_intake * 0.2/0.2);
         printf("4. 蛋白粉: %.2f 克\n", protein_intake * 0.2);
         printf("* 鸡蛋可以是水煮蛋/茶叶蛋/鸡蛋羹，但不是油煎蛋\n");
         printf("* 脂肪摄入一个基本来源是早饭的蛋黄牛奶，如果你不吃蛋黄牛奶,会比推荐模式少吃约10-20g脂肪摄入，请全天补吃20g坚果或3个蛋黄\n");
@@ -272,28 +281,50 @@ void calculate() {
         printf("午餐建议的碳水化合物摄入量为%.2f克，蛋白质摄入量为%.2f克。\n", carb_intake * 0.35, protein_intake * 0.3);
 
         printf("\n午餐碳水建议：\n");
-        printf("1. 熟米饭: %.2f 克（生米除以2.5）\n", carb_intake * 0.35);
-        printf("2. 熟面条: %.2f 克（干面除以3）\n", carb_intake * 0.35);
-        printf("3. 吐司面包/馒头花卷: %.2f 克\n", carb_intake * 0.35);
-        printf("4. 玉米/土豆: %.2f 克（是甜玉米 不是糯玉米）\n", carb_intake * 0.35);
-        printf("5. 红薯: %.2f 克\n", carb_intake * 0.35);
+        printf("1. 熟米饭(偏软): %.2f 克（生米除以2.5）\n", carb_intake * 0.35/0.25);
+        printf("2. 米饭（一般）：%.2f克\n",carb_intake * 0.35/0.30);
+        printf("3. 米饭（硬）：%.2f克\n",carb_intake * 0.35/0.35);
+        printf("4. 熟面条: %.2f 克（干面除以3）\n", carb_intake * 0.35/0.23);
+        printf("5. 吐司面包/馒头花卷: %.2f 克\n", carb_intake * 0.35/0.5);
+        printf("6. 玉米/土豆: %.2f 克（是甜玉米 不是糯玉米）\n", carb_intake * 0.35/0.18);
+        printf("7. 红薯: %.2f 克\n", carb_intake * 0.35/0.2);
+        printf("8. 糯玉米: %.2f 克\n", carb_intake * 0.35/0.33);
+        printf("9. 藕粉（干）: %.2f 克\n", carb_intake * 0.35/0.9);
+        printf("10. 挂面（生）: %.2f 克\n", carb_intake * 0.35 / 0.7);
+        printf("11. 意面（生）: %.2f 克\n", carb_intake * 0.35 / 0.7);
+        printf("12. 鲜面（生）: %.2f 克\n", carb_intake * 0.35 / 0.65);
+        printf("13. 米粥: %.2f 克\n", carb_intake * 0.35 / 0.125);
+        printf("14. 米线（湿）: %.2f 克\n", carb_intake * 0.35 / 0.33);
+        printf("15. 米粉（干）: %.2f 克\n", carb_intake * 0.35 / 0.75);
+        printf("16. 肠粉: %.2f 克\n", carb_intake * 0.35 / 0.20);
 
         printf("\n午餐蛋白建议：\n");
-        printf("1. 熟瘦肉: %.2f 克（带油没事）\n", protein_intake * 0.3);
+        printf("1. 熟瘦肉: %.2f 克（带油没事）\n", protein_intake * 0.3/0.2);
         printf("* 脂肪摄入另一基本来源是带油菜的用油，如果你的正餐吃低油无油菜（卤肉、炖肉、清炒、清炖、轻食、水煮），会比推荐模式少吃约20g脂肪摄入，请全天补吃30g坚果或4个蛋黄\n");
         
         printf("晚餐建议的碳水化合物摄入量为%.2f克，蛋白质摄入量为%.2f克。\n", carb_intake * 0.35, protein_intake * 0.3);
         
         
         printf("\n晚餐碳水建议：\n");
-        printf("1. 熟米饭: %.2f 克（生米除以2.5）\n", carb_intake * 0.35);
-        printf("2. 熟面条: %.2f 克（干面除以3）\n", carb_intake * 0.35);
-        printf("3. 吐司面包/馒头花卷: %.2f 克\n", carb_intake * 0.35);
-        printf("4. 玉米/土豆: %.2f 克（是甜玉米 不是糯玉米）\n", carb_intake * 0.35);
-        printf("5. 红薯: %.2f 克\n", carb_intake * 0.35);
+        printf("1. 熟米饭(偏软): %.2f 克（生米除以2.5）\n", carb_intake * 0.35/0.25);
+        printf("2. 米饭（一般）：%.2f克\n",carb_intake * 0.35/0.30);
+        printf("3. 米饭（硬）：%.2f克\n",carb_intake * 0.35/0.35);
+        printf("4. 熟面条: %.2f 克（干面除以3）\n", carb_intake * 0.35/0.23);
+        printf("5. 吐司面包/馒头花卷: %.2f 克\n", carb_intake * 0.35/0.5);
+        printf("6. 玉米/土豆: %.2f 克（是甜玉米 不是糯玉米）\n", carb_intake * 0.35/0.18);
+        printf("7. 红薯: %.2f 克\n", carb_intake * 0.35/0.2);
+        printf("8. 糯玉米: %.2f 克\n", carb_intake * 0.35/0.33);
+        printf("9. 藕粉（干）: %.2f 克\n", carb_intake * 0.35/0.9);
+        printf("10. 挂面（生）: %.2f 克\n", carb_intake * 0.35 / 0.7);
+        printf("11. 意面（生）: %.2f 克\n", carb_intake * 0.35 / 0.7);
+        printf("12. 鲜面（生）: %.2f 克\n", carb_intake * 0.35 / 0.65);
+        printf("13. 米粥: %.2f 克\n", carb_intake * 0.35 / 0.125);
+        printf("14. 米线（湿）: %.2f 克\n", carb_intake * 0.35 / 0.33);
+        printf("15. 米粉（干）: %.2f 克\n", carb_intake * 0.35 / 0.75);
+        printf("16. 肠粉: %.2f 克\n", carb_intake * 0.35 / 0.20);
 
         printf("\n晚餐蛋白建议：\n");
-        printf("1. 熟瘦肉: %.2f 克（带油没事）\n", protein_intake * 0.3);
+        printf("1. 熟瘦肉: %.2f 克（带油没事）\n", protein_intake * 0.3/0.2);
         printf("* 瘦肉脂肪率一般不超过5%%，基本只有：①没有白色黄色脂肪层的猪牛羊肉 ②去皮鸡鸭肉 ③鱼虾\n");
         printf("* 这些都不是瘦肉：鸡皮鸭皮、猪大排、糖醋里脊、锅包肉、烤肉、午餐肉、肥牛、肥羊、排骨、牛排、肉肠、肉饼、肉馅、肉丸\n");
 
@@ -307,7 +338,7 @@ void calculate() {
         
 
         printf("\n零食夜宵蛋白建议：\n");
-        printf("1. 熟瘦肉: %.2f 克（带油没事）\n", protein_intake * 0.2);
+        printf("1. 熟瘦肉: %.2f 克（带油没事）\n", protein_intake * 0.2/0.2);
         printf("2. 其他可选：乳制品、鸡蛋、蔬菜、无糖饮料\n");
         printf("* 你不吃零食夜宵也可以，就把这上面这点蛋白质配额给其他几餐，量其实很少的\n");
 
