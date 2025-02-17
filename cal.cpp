@@ -224,6 +224,7 @@ void calculate() {
     // 调用函数获取碳水和蛋白质比例
 
     // 将height_cm和weight估计为个位以0、5结尾的
+    int ini_weight=weight;
     height_cm = round(height_cm / 5.0) * 5.0;
     weight = round(weight / 5.0) * 5.0;
     double carb_ratio, protein_ratio;
@@ -231,8 +232,8 @@ void calculate() {
 
     // 计算并输出碳水和蛋白质摄入量
     if (carb_ratio > 0.0 && protein_ratio > 0.0) {
-        double carb_intake = carb_ratio * weight;
-        double protein_intake = protein_ratio * weight;
+        double carb_intake = carb_ratio * ini_weight;
+        double protein_intake = protein_ratio * ini_weight;
         double fat_intake = (e - (carb_intake * 4.0 + protein_intake * 4.0)) / 9.0;
 
 
